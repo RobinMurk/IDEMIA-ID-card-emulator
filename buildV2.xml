@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="applet" basedir=".">
+
+  <taskdef name="javacard" classname="pro.javacard.ant.JavaCard" classpath="ant-javacard.jar"/>
+
+  <target name="applet">
+    <javacard jckit="jc_kits/jc222_kit/">
+      <cap output="IDapplet_V2.cap" sources="src">
+        <!--<applet class="IDcard.IDApplet" aid="a000000077010800070000fe00000100"/> -->
+        <applet class="IDcard.IDApplet" aid="a011111177010800070000fe111111"/>
+        <import exps="ext" jar="lib/gp211.jar"/>
+      </cap>
+    </javacard>
+  </target>
+</project>
