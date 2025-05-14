@@ -43,18 +43,13 @@ elif atr == [0x3B, 0xFE, 0x18, 0x00, 0x00, 0x80, 0x31, 0xFE, 0x45, 0x53, 0x43, 0
 else:
     print("[-] Unknown card:", toHexString(atr))
 
-def now():
-    return datetime.datetime.now()
-
-def timediff(s):
-    return (datetime.datetime.now()-s).total_seconds()
 
 
 
 r = send([0xFF,0xCA,0x01,0x00,0x00])
 ats = bytes(r)
-print("ATS (%s): %s" % (len(ats), (toHexString(r))))
+print(f"ATS {len(ats)} {toHexString(r)}")
 
 r = send([0xFF,0xCA,0x00,0x00,0x00])
 ats = bytes(r)
-print("UID (%s): %s" % (len(ats), toHexString(r)))
+print(f"UID {len(ats)} {toHexString(r)}")

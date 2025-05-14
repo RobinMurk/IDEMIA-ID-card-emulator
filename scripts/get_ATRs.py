@@ -11,8 +11,6 @@ channel:CardConnection = CardRequest(timeout=100, cardType=AnyCardType()).waitfo
 
 protocol = CardConnection.T0_protocol
 protocol_fallback = CardConnection.T1_protocol
-protocol_name = "T=0"
-protocol_fallback_name = "T=1"
 
 protocol = 0
 try:
