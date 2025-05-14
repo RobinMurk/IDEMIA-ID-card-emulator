@@ -3,13 +3,13 @@
 ## Current Status:
 **working**
 
-This repository is for Robin Mürk's BSc thesis titled *"Estonian ID card’s personal data file emulator"* All materials and resources needed to build the CAP file and load it to a Java Card are included. The only requirement is **Java SE 8** (version 8u442 is confirmed to work). 
+This repository is for Robin Mürk's BSc thesis titled *"Estonian ID card’s personal data file emulator"* All materials and resources needed to build the CAP file and load it to a Java Card are included. The only requirement is **Java SE 8** (version 8u442 is confirmed to work). This applet is built for Java Card 2.2.2 (can still be loaded onto higher versions).
 
 The following guide is meant for **Ubuntu 22.04 LTS**.
 
 ## How to create and install the emulator applet:
 1. Pull the repo to a local machine
-2. Install the following package: `ant`
+2. Install the Apache Ant by running: `sudo apt install ant`
 3. You can also install and setup Java SE 8 if needed: `sudo apt install openjdk-8-jdk`
 4. Make sure you are in the root directory of the repo.
 5. Run the command: `ant -f buildV2.xml`. This should create an `IDappletV2.cap` file in the current directory.
