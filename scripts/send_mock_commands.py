@@ -168,11 +168,11 @@ Usage: python3 send_mock_commands.py [options]\n
 Options:\n
 --help => prints this help text\n
 --feitian_card => sets the Feitian card's original historic bytes\n
---id_card => sets the card's historic bytes to the 2018 IDEMIA ID card's historic bytes\n
+--id_card => sets the card's historic bytes to the 2018 IDEMIA made ID card's historic bytes\n
 --gd_card => sets the G&D card's original historic bytes\n
 --logger => retrives the loggers data\n
 \t--save => saves the loggers data to a file. Must be present with --logger flag\n
-\t--name => name of the file. Must be present with --logger flag\n
+\t--name <FILE NAME> => name of the file. Must be present with --save flag\n
 --reset-logger => resets the logger\n
 --logger-index => retrives the loggers index
             """
