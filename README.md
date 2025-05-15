@@ -16,7 +16,7 @@ The following guide is meant for **Ubuntu 22.04 LTS**.
 6. Make sure your card reader is connected and the Java Card inserted. If you are using WSL, see more info about `usbipd` for Windows.
 7. Run the command: `java -jar gp.jar --install IDappletV2.cap --default`
 9. To remove the applet from the card run: `java -jar gp.jar --deletedeps --delete {applet AID}`
-10. To find the applet AID run: `java -jar gp.jar --list` while the card is still inserted.
+10. To find the applet AID run: `java -jar gp.jar --list` while the card is still inserted or see from the `buildV2.xml`.
 
 To reinstall a new or modified applet you can use the `reinstall_V2.sh` script. NB: make sure you understand what the script does before executing!
 
